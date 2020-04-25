@@ -4,8 +4,8 @@ This project contains the slides from my talks in Spanish of "A Rust introductio
 
 The includes talks are:
 
-- [01 - Introducción a Rust](https://alvsanand/github.io/a-rust-introduction/01).
-- [02 - Rust básico](https://alvsanand/github.io/a-rust-introduction/02).
+- [01 - Introducción a Rust](https://alvsanand.github.io/a-rust-introduction/01).
+- [02 - Rust básico](https://alvsanand.github.io/a-rust-introduction/02).
 
 ## Generate Jekyll site
 
