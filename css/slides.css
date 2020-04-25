@@ -1,0 +1,127 @@
+@font-face {
+  font-family: emoji;
+
+  src: local('Noto Color Emoji'),
+       local('Noto Emoji'),
+       local('Apple Color Emoji'),
+       local('Android Emoji'),
+       local('Segoe UI'),
+       local(EmojiSymbols),
+       local(Symbola);
+
+  /* Emoji unicode blocks */
+  unicode-range: U+1F300-1F5FF, U+1F600-1F64F, U+1F680-1F6FF, U+2600-26FF;
+}
+
+body {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif, emoji;
+  font-size: 20pt;
+}
+
+.remark-slide-content h1 {
+  font-size: 48pt;
+}
+
+.remark-slide-content h2 {
+  font-size: 36pt;
+}
+
+.remark-slide-content h3 {
+  font-size: 28pt;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+}
+
+.remark-slide-content h1, h2, h3 {
+  height: 80px;
+  margin: 20px 0px;
+}
+
+strong, b {
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 100%;
+  font-weight: 600;
+  margin: 0;
+}
+
+h6 {
+  font-size: 100%;
+  font-weight: 400;
+  margin: 0;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.remark-code {
+  font-size: 16pt;
+}
+.remark-inline-code {
+  font-size: 110%;
+  color: #8D1A38;
+}
+.remark-slide-content {
+  font-size: inherit;
+  padding-top: 5%;
+  padding-left: 3.5em;
+  padding-right: 3.5em;
+  padding-bottom: 5%;
+}
+
+pre, code {
+  font-family: "Ubuntu Mono", "Consolas", monospace, emoji;
+}
+
+li, ul {
+  margin: 0.25em 0;
+}
+ul, pre, li > p {
+  margin: 0;
+}
+
+li li {
+  font-size: 90%;
+ }
+
+ div.my-header {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	height: 10%;
+	width: 100%;
+}
+
+div.my-header img {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+}
+
+/* div.my-footer {
+    border-top: 1px solid #ccc;
+    font-size: 10pt;
+	text-align: center;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	height: 30px;
+	width: 100%;
+} */
+
+div.my-footer img {
+	bottom: 2px;
+	right: 2px;
+	height: 5%;
+	width: auto;
+	position: fixed;
+}

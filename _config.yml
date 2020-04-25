@@ -1,0 +1,9 @@
+# Site settings
+title: "A Rust Introduction"
+email: "cis198@cis.upenn.edu"
+baseurl: "/a-rust-introduction"
+url: "http://alvsanand.github.io"
+github_username: alvsanand
+
+# Build settings
+markdown: kramdown

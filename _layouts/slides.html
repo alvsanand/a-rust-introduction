@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body>
+    <textarea id="source">
+layout: true
+<div class="my-header"><img src="{{ site.baseurl }}/assets/header.svg" /></div>
+<div class="my-footer"><img src="{{ site.baseurl }}/assets/company_logo.png" /></div>
+
+---
+{% include_relative content.md %}
+    </textarea>
+    <script src="{{ site.baseurl }}/js/remark.min.js"></script>
+    <script src="{{ site.baseurl }}/js/playpen.198.js"></script>
+    <script>
+      var slideshow = remark.create({
+        ratio: '16:9',
+        slideNumberFormat: ''
+      });
+      window.playgroundUrl = "https://play.rust-lang.org/";
+    </script>
+  </body>
+</html>
