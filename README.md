@@ -1,4 +1,4 @@
-# a-rust-introduction
+# A Rust Introduction
 
 This project contains the slides from my talks in Spanish of "A Rust introduction".
 

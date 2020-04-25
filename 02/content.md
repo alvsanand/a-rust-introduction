@@ -568,6 +568,8 @@ fn it_works() {
 }
 ```
 
+---
+
 ### Soporte de IDEs ###
 
 - Los desarrolladores pueden trabajar con código de Rust desde la línea de comandos o usando.
