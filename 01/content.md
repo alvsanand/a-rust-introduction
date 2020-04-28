@@ -29,6 +29,30 @@ Casi todos los valores predeterminados, y garantiza la seguridad del hilo." &nda
 - Desde 2016, Rust es el primer lenguaje de programación más querido en la encuesta anual de Stack Overflow.
 
 ---
+
+## ¿Quién lo usa? ##
+
+<div><img alt="Rust?" src="img/rust-in-production.png" style="width: 85%; height: 85%;"/></div>
+
+---
+
+## Let's Rust! ##
+
+Hello Rust!
+
+```rust
+fn call_me<F: Fn()>(f: F) {
+    f();
+}
+
+fn main() {
+    let hello = || println!("Hello Rust!");
+
+    call_me(hello);
+}
+```
+
+---
 class: middle, center
 
 <div><img alt="Rust?" src="img/why-rust.png" style="width: 90%; height: 90%;"/></div>
@@ -37,7 +61,7 @@ class: middle, center
 
 ## ¿Y porqué Rust? ##
 
-Tiene 4 grandes pilares:
+Esta asentado sobre 4 grandes pilares:
 
 - Seguridad.
 - Rápidez.
@@ -66,12 +90,37 @@ Tiene 4 grandes pilares:
 
 ---
 
+### Rápidez II ###
+
+<div><img alt="Rust?" src="img/fastest.svg" style="height: 70%; width: 70%;"/></div>
+
+(*) Fuente [The Computer Language Benchmarks Game](https://benchmarksgame-team.pages.debian.net/benchmarksgame)
+
+---
+
 ### Lenguage Funcional ###
 
 - Funciones de primera clase.
 - Genéricos basados en rasgos (traits).
 - Tipos de datos algebraicos.
 - Pattern matching.
+
+---
+
+## Lenguage Funcional II ##
+
+```rust
+fn main() {
+    let array = 0..9;
+
+    let mult = |a| (2 * a) as i32 ;
+
+    let sum: i32 = array.filter(|x| x % 3 == 0)
+                        .map(mult)
+                        .sum();
+    println!("Sum = {}", sum);
+}
+```
 
 ---
 
@@ -88,12 +137,6 @@ Tiene 4 grandes pilares:
 - Rust lanza una nueva versión estable cada seis semanas.
 - Hay disponibles versiones cada noche.
 - Versión estable más reciente: Rust 1.42.
-
----
-
-## ¿Quién lo usa? ##
-
-<div><img alt="Rust?" src="img/rust-in-production.png" style="width: 85%; height: 85%;"/></div>
 
 ---
 class: middle, center
@@ -134,12 +177,24 @@ class: middle, center
 
 ---
 
-## Let's Rust! ##
+## Aplicaciones en Rust ##
 
-Hello Rust!
+Algunas ejemplos de aplicaciones escritas completamente en Rust:
 
-```rust
-fn main() {
-    println!("Hello Rust!");
-}
-```
+- Servo, un motor de navegador web de Mozilla.
+- Rocket,  web framework, fácil de usar y rápido.
+- Redox, sistema operativo completo, Rust 100%.
+- Hábitat, application automation framework.
+
+y muchos otros, mira en [awesome-rust](https://github.com/kud1ing/awesome-rust)
+
+---
+
+## Próximas charlas ##
+
+Si te has quedado con ganas de más, en próximas charlas podrás ver:
+
+- Rust básico.
+- Structures / Traits.
+- Ownership / Borrowing / Lifetimes
+...
