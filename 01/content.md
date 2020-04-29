@@ -66,7 +66,7 @@ Esta asentado sobre 4 grandes pilares:
 - Seguridad.
 - Rápidez.
 - Lenguage Funcional.
-- Sin cargas.
+- Low overhead.
 
 ---
 
@@ -124,7 +124,7 @@ fn main() {
 
 ---
 
-### Low-overhead ###
+## Gestión de la memoria ###
 
 - Rust garantiza la seguridad de la memoria sin necesidad de un recolector de basura.
 - La memoria se gestiona a través de un sistema de propiedad que el compilador comprueba en el momento de la compilación.
@@ -170,7 +170,7 @@ class: middle, center
 ### Desventajas de Rust ###
 
 - La curva de aprendizaje de Rust es más pronunciado que en Go.
-- R.ust es más lento en compilar.
+- Rust es más lento en compilar.
 - En más lento que C y C ++ en condiciones análogas.
 
 (*) Más info en [Go vs Rust: Which is Better and Why?](https://appinventiv.com/blog/go-vs-rust/)
@@ -197,4 +197,4 @@ Si te has quedado con ganas de más, en próximas charlas podrás ver:
 - Rust básico.
 - Structures / Traits.
 - Ownership / Borrowing / Lifetimes
-...
+- ...
